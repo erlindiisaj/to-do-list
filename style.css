@@ -72,6 +72,11 @@ body {
    
 }
 
+.input-div button:active {
+   background: greenyellow;
+   color: black;
+}
+
 
 .to-do-div {
    position: absolute;
@@ -101,12 +106,8 @@ body {
       text-decoration: line-through;
 }
 
-.delete {
-   display: none;
-}
-
 .to-do-div ul > li:hover {
-   cursor: pointer;
+   cursor: pointer;  
    background: #e5fcd2; 
    transition: ease-in-out 0.25s;
 }
@@ -122,31 +123,10 @@ font-size: 1rem;
 
 }
 
-
-
 li > button:hover {
    color: red;
    cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .delete-button {
    color: red; 

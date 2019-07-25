@@ -20,7 +20,7 @@ const createListElement = () => {
    }
 
    const deleteItem = () => {
-      li.classList.add('delete')
+      ul.removeChild(li)
    }
 
    li.addEventListener('click', doneItem)
@@ -36,13 +36,13 @@ const inputLength = () => {
 
 
 const addElementByKeypress = (event) => {
-   if (inputLength() > 0 && event.which === 13) {
+   if (inputLength() > 0 && inputLength() <= 45 && event.which === 13) {
       createListElement()
    }
 }
 
 const addElementByClick = () => {
-   if (inputLength() > 0 ) {
+   if (inputLength() > 0 && inputLength() <= 45 ) {
       createListElement()
    }
 }
